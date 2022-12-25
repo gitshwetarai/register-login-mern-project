@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://127.0.0.1:27017/employee-registration", {
+mongoose.connect("mongodb+srv://shweta_rai:atlas12345@cluster0.l1blamj.mongodb.net/employee-registration", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -9,5 +9,5 @@ mongoose.connect("mongodb://127.0.0.1:27017/employee-registration", {
     console.log("DB is connected");
   })
   .catch((err) => {
-    console.log("No connection");
+    console.log(err);
   })

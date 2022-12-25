@@ -24,7 +24,7 @@ const Register = () => {
     const register = () => {
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
-            axios.post("http://localhost:8081/register", user)
+            axios.post("https://register-login-form-bvi9.onrender.com/register", user)
             .then( res => {
                 alert(res.data.message)
                 navigate("/login")

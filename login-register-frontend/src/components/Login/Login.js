@@ -20,7 +20,7 @@ const Login = ({ setLoginUser}) => {
     }
 
     const login = () => {
-        axios.post("http://localhost:8081/login", user)
+        axios.post("https://register-login-form-bvi9.onrender.com/login", user)
         .then(res => {
             alert(res.data.message)
             setLoginUser(res.data.user)
